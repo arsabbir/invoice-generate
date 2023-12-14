@@ -43,7 +43,14 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
       <div className="sidebar-header flex items-center justify-center py-4">
         <div className="inline-flex">
           <Link to={"/"} className="inline-flex flex-row items-center mr-1">
-            <img className="w-10 h-10 " src={firstSetting?.logo || "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_favicon_icon_130608.png"} alt="" />
+            <img
+              className="w-10 h-10 "
+              src={
+                firstSetting?.logo ||
+                "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_favicon_icon_130608.png"
+              }
+              alt=""
+            />
             <span className="leading-10  text-gray-100 text-2xl font-bold ml-1 uppercase">
               {firstSetting?.brandName || "INVOICE"}
             </span>
@@ -180,61 +187,12 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
                 </svg>
               </span>
               <span className="ml-3">Clients</span>
-              <span className="flex items-center justify-center text-xs text-red-500 font-semibold bg-red-100 h-6 px-2 rounded-full ml-auto">
+              {/* <span className="flex items-center justify-center text-xs text-red-500 font-semibold bg-red-100 h-6 px-2 rounded-full ml-auto">
                 1k
-              </span>
+              </span> */}
             </Link>
           </li>
 
-          <li className="my-px">
-            <Link
-              to={"/profile"}
-              className={`flex flex-row items-center h-10 px-3 rounded-lg text-gray-300  hover:text-gray-700 ${
-                location.pathname === "/profile"
-                  ? "  text-gray-700 bg-gray-100"
-                  : ""
-              }`}
-            >
-              <span className="flex items-center justify-center text-lg text-[#53BD70]">
-                <svg
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-6 w-6"
-                >
-                  <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </span>
-              <span className="ml-3">Profile</span>
-            </Link>
-          </li>
-          {/* <li className="my-px">
-            <a
-              href="#"
-              className="flex flex-row items-center h-10 px-3 rounded-lg text-gray-300 hover:bg-gray-100 hover:text-gray-700"
-            >
-              <span className="flex items-center justify-center text-lg text-gray-400">
-                <svg
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-6 w-6"
-                >
-                  <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                </svg>
-              </span>
-              <span className="ml-3">Notifications</span>
-              <span className="flex items-center justify-center text-xs text-red-500 font-semibold bg-red-100 h-6 px-2 rounded-full ml-auto">
-                10
-              </span>
-            </a>
-          </li> */}
           <li className="my-px">
             <Link
               to={dataS ? `setting/${dataS}` : "/setting"}

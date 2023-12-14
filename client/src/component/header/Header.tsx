@@ -126,16 +126,16 @@ const Header = ({ toggleSidebar, setToggleSidebar }) => {
                   <div className="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg overflow-hidden transition-all duration-500">
                     <a
                       href="#"
-                      className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white transition duration-300"
+                      className="block px-4 py-2 text-gray-800 hover:bg-[#339CCB] hover:text-white transition duration-300"
                     >
                       Profile
                     </a>
-                    <button
+                    <a
                       onClick={handleLogout}
-                      className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white transition duration-300"
+                      className="block px-4 py-2 text-gray-800 hover:bg-[#339CCB] hover:text-white transition duration-300"
                     >
                       Logout
-                    </button>
+                    </a>
                   </div>
                 )}
               </div>
