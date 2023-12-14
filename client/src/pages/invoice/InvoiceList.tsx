@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import DataTable, { TableColumn } from "react-data-table-component";
 import { Link } from "react-router-dom";
-import { MdDelete } from "react-icons/md";
+
 import { MdDeleteOutline } from "react-icons/md";
 import { MdPrint } from "react-icons/md";
 import {
