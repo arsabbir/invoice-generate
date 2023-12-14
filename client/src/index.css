@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgPrimary {
+  background-color: #339ccb !important;
+}
+.colorPrimary {
+  color: #339ccb;
+}
+.bgSecondary {
+  background-color: #53bd70 !important;
+}
+.colorSecondary {
+  color: #53bd70 !important;
+}
+.min-h-screen.flex.items-center.justify-center.bg-gray-100 {
+    padding: 20px;
+}
+
+
+
+
+
